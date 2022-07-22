@@ -1,8 +1,11 @@
 import 'package:baaz/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class notificationPage extends StatelessWidget {
-  const notificationPage({Key? key}) : super(key: key);
+import '../widgets/profile_row.dart';
+
+class MyProfile extends StatelessWidget {
+  const MyProfile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -73,29 +76,70 @@ class notificationPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 50,
+            Divider(
+              height: 10,
+              thickness: 1,
+              color: Colors.black,
             ),
+            SizedBox(
+              height: 25,
+            ),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              scrollDirection: Axis.vertical,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.all(14.0),
+                  child: Container(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          ProfileRow(
+                            icon: Icons.account_circle_outlined,
+                            text: 'Payment Options',
+                          ),
+                          ProfileRow(
+                            icon: Icons.account_circle_outlined,
+                            text: 'My Booking',
+                          ),
+                          ProfileRow(
+                            icon: Icons.account_circle_outlined,
+                            text: 'Manage Address',
+                          ),
+                          ProfileRow(
+                            icon: Icons.account_circle_outlined,
+                            text: 'Refer & Earn',
+                          ),
+                          ProfileRow(
+                            icon: Icons.account_circle_outlined,
+                            text: 'Discount & offers',
+                          )
+                        ],
+                      ),
+                    ),
+                    height: 400,
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Color(0xFFDDDDDD),
+                        ),
+                        borderRadius: BorderRadius.circular(
+                            20) // use instead of BorderRadius.all(Radius.circular(20))
+                        ),
+                  ),
+                );
+              },
+              itemCount: 2,
+            ),
+            Text(
+              'Logout',
+              style: TextStyle(color: Colors.red),
+            )
           ],
         ),
       ),
-    );
-  }
-}
-
-class NotificationRow extends StatelessWidget {
-  const NotificationRow({Key? key, required this.iconButton}) : super(key: key);
-
-  final IconButton iconButton;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(
-          child: Icon(Icons.payment),
-        )
-      ],
     );
   }
 }
