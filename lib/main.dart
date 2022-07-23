@@ -2,6 +2,12 @@ import 'package:baaz/screens/my_profile.dart';
 import 'package:baaz/screens/landing_page.dart';
 import 'package:baaz/screens/my_booking.dart';
 import 'package:baaz/screens/notification.dart';
+import 'package:baaz/screens/opt_verification.dart';
+import 'package:baaz/screens/order.dart';
+import 'package:baaz/screens/peroidic_services.dart';
+import 'package:baaz/screens/refer_and_earn.dart';
+import 'package:baaz/screens/select_car_page.dart';
+import 'package:baaz/screens/settings.dart';
 import 'package:baaz/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: NotificationPage(),
+      home: ReferandEarn(),
     );
   }
 }

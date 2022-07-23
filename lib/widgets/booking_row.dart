@@ -15,6 +15,11 @@ class bookingCard extends StatelessWidget {
           CircleAvatar(
             child: CircleAvatar(
               radius: 32,
+              backgroundColor: Color(0xFFF8A435),
+              child: Image.asset(
+                ImageConstants.Bookingbaaz,
+                fit: BoxFit.cover,
+              ),
             ),
             radius: 30,
             backgroundImage: AssetImage(ImageConstants.Bookingbaaz),
@@ -37,7 +42,8 @@ class bookingCard extends StatelessWidget {
                     onPressed: () {},
                     child: Text(
                       'Confirm',
-                      style: TextStyle(color: Colors.black),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                     style: ElevatedButton.styleFrom(
                         shape: StadiumBorder(), primary: Color(0xFFF8A435)),

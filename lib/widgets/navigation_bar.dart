@@ -13,7 +13,7 @@ class CustomNavigationBar extends StatelessWidget {
       backgroundColor: Colors.transparent,
       items: const <Widget>[
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Icon(
             Icons.home,
             size: 35,
@@ -21,7 +21,7 @@ class CustomNavigationBar extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Icon(
             Icons.book,
             size: 30,
@@ -29,7 +29,7 @@ class CustomNavigationBar extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Icon(
             Icons.notifications,
             size: 30,
@@ -37,7 +37,7 @@ class CustomNavigationBar extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Icon(
             Icons.book_online,
             size: 30,
@@ -45,7 +45,7 @@ class CustomNavigationBar extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Icon(
             Icons.account_circle_outlined,
             size: 30,

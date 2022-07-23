@@ -38,7 +38,15 @@ class BookingPage extends StatelessWidget {
                 ),
                 bookingCard(),
                 SizedBox(
-                  height: 40,
+                  height: 20,
+                ),
+                Divider(
+                  color: Colors.black,
+                  height: 10,
+                ),
+                bookingCard(),
+                SizedBox(
+                  height: 20,
                 ),
                 Divider(
                   color: Colors.black,
@@ -54,13 +62,12 @@ class BookingPage extends StatelessWidget {
                 ),
                 bookingCard(),
                 SizedBox(
-                  height: 40,
+                  height: 20,
                 ),
                 Divider(
                   color: Colors.black,
                   height: 10,
                 ),
-                bookingCard(),
               ],
             ),
           ),
