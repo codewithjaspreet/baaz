@@ -1,3 +1,4 @@
+import 'package:baaz/screens/manage_Address.dart';
 import 'package:baaz/screens/my_profile.dart';
 import 'package:baaz/screens/landing_page.dart';
 import 'package:baaz/screens/my_booking.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ReferandEarn(),
+      home: ManageAddress(),
     );
   }
 }
