@@ -7,5 +7,3 @@ class ImageConstants {
   static const String item1 = "assets/images/item1.png";
   static const String item2 = "assets/images/item2.png";
 }
-
-class AppColors {}
