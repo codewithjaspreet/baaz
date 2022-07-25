@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '';
+import '../widgets/searchContainer.dart';
 
 class LocationSearch extends StatelessWidget {
   const LocationSearch({Key? key}) : super(key: key);
@@ -13,28 +13,8 @@ class LocationSearch extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 18.h),
           child: Column(
             children: [
-              Container(
-                height: 36.h,
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Search for society, landmark, locality...',
-                        style: TextStyle(fontSize: 13.13.sp),
-                      ),
-                      Icon(
-                        Icons.search,
-                        color: Color(0xFF363636),
-                      )
-                    ],
-                  ),
-                ),
-                decoration: BoxDecoration(
-                    border: Border.all(color: Color(0xFFBDBDBD)),
-                    borderRadius: BorderRadius.circular(12.sp),
-                    color: Colors.transparent),
+              search_container(
+                heading: 'Search for society, landmark, locality...',
               ),
               SizedBox(
                 height: 16.h,

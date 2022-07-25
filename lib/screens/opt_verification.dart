@@ -26,7 +26,7 @@ class OtpVerification extends StatelessWidget {
           Positioned(
             top: 150,
             left: 50,
-            child: Image.asset('assets/images/Group.png'),
+            child: Image.asset('assets/images/Group1.png'),
           ),
           Padding(
             padding: const EdgeInsets.only(

@@ -39,6 +39,7 @@ dependencies:
   auto_size_text: ^3.0.0
   flutter_lints: ^2.0.0
   flutter_switch: ^0.3.2
+  smooth_page_indicator: ^1.0.0+2
 dev_dependencies:
   flutter_test:
     sdk: flutter

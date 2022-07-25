@@ -7,6 +7,7 @@ class CustomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CurvedNavigationBar(
+      animationDuration: Duration(milliseconds: 300),
       color: Color(0xFFFFC87F),
       height: 55,
       buttonBackgroundColor: Color(0xFFF49517),
