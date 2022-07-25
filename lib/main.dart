@@ -1,3 +1,4 @@
+import 'package:baaz/screens/Discount.dart';
 import 'package:baaz/screens/home.dart';
 import 'package:baaz/screens/location_search.dart';
 import 'package:baaz/screens/manage_Address.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: Home(),
+          home: Discount(),
         );
       },
     );
