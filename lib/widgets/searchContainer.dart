@@ -15,20 +15,17 @@ class search_container extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 36.h,
+      width: 362.w,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 10),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              heading,
-              style: TextStyle(fontSize: 13.13.sp),
-            ),
-            Icon(
-              Icons.search,
-              color: Color(0xFF363636),
-            )
-          ],
+        child: TextField(
+          decoration: InputDecoration(
+              border: InputBorder.none,
+              prefixIcon: Icon(
+                Icons.search,
+                color: Colors.black,
+              ),
+              hintText: heading),
         ),
       ),
       decoration: BoxDecoration(

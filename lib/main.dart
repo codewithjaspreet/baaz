@@ -10,6 +10,7 @@ import 'package:baaz/screens/opt_verification.dart';
 import 'package:baaz/screens/order.dart';
 import 'package:baaz/screens/peroidic_services.dart';
 import 'package:baaz/screens/search_bar.dart';
+import 'package:baaz/screens/search_car.dart';
 import 'package:baaz/screens/select_car_page.dart';
 import 'package:baaz/screens/settings.dart';
 import 'package:baaz/widgets/navigation_bar.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: ReferandEarn(),
+          home: Payment(),
         );
       },
     );
